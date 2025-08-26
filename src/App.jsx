@@ -11,7 +11,6 @@ function App() {
       <Welcome />
       <Projects />
       <Contact /> 
-      <h1>App is working</h1>
     </div>
   );
 }

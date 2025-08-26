@@ -1,68 +1,293 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --bg-color: linear-gradient(#A8B5E0, #C1D5F0, #D5E3F0);
+    --navbar-color: #DAF0F7;
+    --text-color: black; 
+    --button-color: beige; 
+    --link-hover-color: pink;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.darkmode {
+    --bg-color:#00509d;
+    --navbar-color: #002365;
+    --text-color: white; 
+    --button-color: #ffdd42;
+    --button-text-color: #1A237E;
+    --link-hover-color: #f765a3;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color); 
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#navbar {
+    background: var(--navbar-color) ; 
+    position: fixed; /*I want the nav menu to stay when I scroll*/
+    top: 0px;
+    width: 100%; /*takes the whole horizontal spacing */
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; 
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+* {margin: 0; } /*universal selector*/
+
+nav ul {
+    list-style-type: none;
+    gap: 20px;
+    display: flex;
+    padding: 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0; /*makes icon biggest size possible in their provided container*/
+    margin: 10px 10px 10px -20px; /*clockwise, top -right -bottom -left*/
+    border-radius: 50%; /*makes it round*/
+    background-color: var(--bg-color); /*this should be dark blue*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill:var(--text-color); /*this changes icon color from black (light mode) to white (dark mode)*/
+}
+
+#theme-switch svg:last-child{ /*this hide the sun icon during light/default mode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child { /*this will hide the moon icon during dark mode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block; 
+    /*allows svg file to behave like a block instead of inline element; allows it to be visible*/
+}
+
+#navbar a, #view-project-button a{
+    color: var(--text-color);
+    text-decoration: none; 
+}
+
+#navbar a:hover, #view-project-button a:hover, .project-title a:hover, #contacts a:hover {
+    color: var(--link-hover-color);
+}
+
+h1 { /*I want all Headings to be in the middle*/
+    text-align: center;
+}
+
+#welcome {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /*allows the welcome texts to sit on top of each other*/
+    text-align: center; 
+    justify-content: center;
+}
+
+#welcome h1 {    
+    font-size: 82px;
+    margin-bottom: 10px;
+}
+
+#welcome p { /*this is the "I am an aspiring" sentence*/
+    font-size: 2em; 
+    text-align: center;
+}
+
+.typewriter {
+    display: flex; 
+    justify-content: center;
+}
+
+.typewriter h1 {
+    overflow: hidden; /*hides content until the animation starts*/
+    white-space: nowrap; /*keeps it on a single line*/
+    border-right: 5px solid; /*the cursor*/
+    width: 0; 
+    animation: 
+        typing 3s steps(25) forwards, 
+            /*"Steps" equals the number of characters 
+            and "forwards" ensures the element stays in its last state after the animation played*/
+        blink 0.7s step-end infinite, /*the blinking cursor*/ 
+        hide-cursor 0.1s forwards; 
+    animation-delay: 0s, 0s, 3s; 
+}
+
+@keyframes typing { /*"typing" is the name I gave the animation*/
+    from { width: 0; }
+    to { width: 100%; } /*how long the animation should play*/
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes hide-cursor {
+    to { border-right-color: transparent; }
+}
+
+.typewriter-p {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadeInAnimation ease 6s 1 forwards;
+}
+
+@keyframes fadeInAnimation { /*fadeInAnimation is the name I gave to the animation*/
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#view-project-button { /*this is the View my Projects Button*/
+    display: flex;
+    width: 150;
+    justify-content: center;
+    align-items: center;
+    background: var(--button-color);
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    margin: 20px auto 0; 
+}
+
+#view-project-button a {
+    color: var(--button-text-color);
+}
+
+#about {
+    border-top: 5px solid #C8D9F0;
+}
+
+#about h1 {
+    font-size: 48px;
+}
+
+#about-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#about-left-column { /*the text for the about me section*/
+    flex: 1; 
+    width: 50%;
+    padding-left: 15px;
+}
+
+#about-left-column p {
+    font-size: 18px;
+}
+
+#about-right-column { /*the skills button*/
+    width: 20%;
+    line-height: 23px;
+}
+
+.skill-button {
+    background-color: var(--button-color);
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 100px;
+    color: var(--button-text-color);
+}
+
+#projects h1 { 
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*creates 3 columns*/
+    gap: 30px;  /*adds spacing between the columns*/
+    min-height: 25vh;
+}
+
+.project-tile {
+    border: 5px solid #000040; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+    margin: 15px 5px; /*15 top-bottom and 5 left-right*/
+}
+
+.project-title {
+    flex: 1;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.project-title a{ 
+    color: var(--text-color);
+}
+
+.project-image { /*this is NOT the image itself, if you want to make edits*/
+    flex: 1;
+}
+
+.project-image img { /*this is about the image of the project iself*/
+    max-width: 100%; /*makes image stay in container*/
+    object-fit: cover;
+}
+
+/*contacts section*/
+#contacts {
+    position: relative;
+    text-align: center; 
+}
+
+#contacts h1 {
+    font-size: 36px;
+}
+
+#contacts a {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/*added for phone*/
+@media (max-width: 767px) {
+    nav {
+        display: none; /*hide the nav-menu when on phone*/
+    }
+
+    #welcome h1, #about h1, #projects h1 {    
+        font-size: 48px;
+    }
+
+    #welcome p {
+        font-size: 25px;
+    }
+
+    #about-text {
+        display: flex;
+        flex-direction: column; /*I want them to stack on top of each other now*/
+        align-items: flex-start; 
+        gap: 5px; 
+    }
+
+    #about-left-column, #about-right-column {
+        width: 100%; /*each should take up an entire line themselves*/
+    }
+
+    #skills {
+        display: flex;
+        flex-wrap: wrap; 
+            /*allows things tomove below automatically when there is not enough space*/
+        gap: 0.75rem; /*rem is 16px so 0.75*16 = 12 */
+    }
+
+    .skill-button {
+        margin-left: 12px;
+    }
+
 }
