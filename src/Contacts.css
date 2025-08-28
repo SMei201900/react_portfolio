@@ -1,0 +1,13 @@
+#contacts {
+    position: relative;
+    text-align: center; 
+}
+
+#contacts h1 {
+    font-size: 36px;
+}
+
+#contacts a {
+    font-size: 18px;
+    color: var(--text-color);
+}
