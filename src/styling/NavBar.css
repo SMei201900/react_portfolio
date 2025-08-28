@@ -15,6 +15,10 @@ nav ul {
     padding: 20px;
 }
 
+#navbar a {
+    font-size: 25px;
+}
+
 #navbar a, #view-project-button a{
     color: var(--text-color);
     text-decoration: none; 
