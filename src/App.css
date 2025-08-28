@@ -1,0 +1,37 @@
+.darkmode {
+    --bg-color:#00509d;
+    --navbar-color: #002365;
+    --text-color: white; 
+    --button-color: #ffdd42;
+    --button-text-color: #1A237E;
+    --link-hover-color: #f765a3;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0; /*makes icon biggest size possible in their provided container*/
+    margin: 10px 10px 10px -20px; /*clockwise, top -right -bottom -left*/
+    border-radius: 50%; /*makes it round*/
+    background-color: var(--bg-color); /*this should be dark blue*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill:var(--text-color); /*this changes icon color from black (light mode) to white (dark mode)*/
+}
+
+#theme-switch svg:last-child{ /*this hide the sun icon during light/default mode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child { /*this will hide the moon icon during dark mode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block; 
+    /*allows svg file to behave like a block instead of inline element; allows it to be visible*/
+}
