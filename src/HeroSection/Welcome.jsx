@@ -1,5 +1,5 @@
-import './styling/Typewrite.css'
-import './styling/Welcome_and_About.css'
+import '../styling/Typewrite.css'
+import '../styling/Welcome_and_About.css'
 
 export default function Welcome() {
   return (

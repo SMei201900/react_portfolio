@@ -1,4 +1,4 @@
-import './styling/NavBar.css'
+import '../styling/NavBar.css';
 
 export default function NavBar() {
   return (
