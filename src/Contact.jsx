@@ -1,4 +1,4 @@
-import './Contacts.css'
+import './styling/Contacts.css'
 
 export default function ContactSection() {
   return (
