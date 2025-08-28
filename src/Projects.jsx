@@ -14,7 +14,7 @@ function Projects() {
                 <div className="project-image">
                     <img 
                     className="tribute-page-img" 
-                    src="#" 
+                    src="/assests/rosalind-franklin-time-magazine-cover.jpg" 
                     alt="Rosalin Franklin as the Cover of Time Magazine" /> 
                 </div>
             </div>
@@ -26,7 +26,7 @@ function Projects() {
                     </h3>
                 </div>
                 <div className="project-image">
-                    <img src="#" alt="Survey Icon" /> 
+                    <img src="/assests/survey_icon_by_flaticon.png" alt="Survey Icon" /> 
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ function Projects() {
                     </h3>
                 </div>
                 <div className="project-image">
-                    <img src="#" alt="Bookstore Icon" /> 
+                    <img src="/assests/bookstore.png" alt="Bookstore Icon" /> 
                 </div>
             </div>
         </div>
