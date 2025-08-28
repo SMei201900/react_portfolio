@@ -1,0 +1,52 @@
+
+#view-project-button { /*this is the View my Projects Button*/
+    display: flex;
+    width: 150;
+    justify-content: center;
+    align-items: center;
+    background: var(--button-color);
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    margin: 20px auto 0; 
+}
+
+#projects h1 { 
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*creates 3 columns*/
+    gap: 30px;  /*adds spacing between the columns*/
+    min-height: 25vh;
+}
+
+.project-tile {
+    border: 5px solid #000040; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+    margin: 15px 5px; /*15 top-bottom and 5 left-right*/
+}
+
+.project-title {
+    flex: 1;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.project-title a{ 
+    color: var(--text-color);
+}
+
+.project-image { /*this is NOT the image itself, if you want to make edits*/
+    flex: 1;
+}
+
+.project-image img { /*this is about the image of the project iself*/
+    max-width: 100%; /*makes image stay in container*/
+    object-fit: cover;
+}
