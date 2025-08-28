@@ -1,3 +1,4 @@
+import './app.css'
 import Nav from './NavBar.jsx'
 import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'

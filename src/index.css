@@ -21,24 +21,7 @@ body {
     color: var(--text-color); 
 }
 
-#navbar {
-    background: var(--navbar-color) ; 
-    position: fixed; /*I want the nav menu to stay when I scroll*/
-    top: 0px;
-    width: 100%; /*takes the whole horizontal spacing */
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px; 
-}
-
 * {margin: 0; } /*universal selector*/
-
-nav ul {
-    list-style-type: none;
-    gap: 20px;
-    display: flex;
-    padding: 20px;
-}
 
 #theme-switch {
     height: 50px;
@@ -69,15 +52,6 @@ nav ul {
     /*allows svg file to behave like a block instead of inline element; allows it to be visible*/
 }
 
-#navbar a, #view-project-button a{
-    color: var(--text-color);
-    text-decoration: none; 
-}
-
-#navbar a:hover, #view-project-button a:hover, .project-title a:hover, #contacts a:hover {
-    color: var(--link-hover-color);
-}
-
 h1 { /*I want all Headings to be in the middle*/
     text-align: center;
 }
@@ -88,16 +62,6 @@ h1 { /*I want all Headings to be in the middle*/
     flex-direction: column; /*allows the welcome texts to sit on top of each other*/
     text-align: center; 
     justify-content: center;
-}
-
-#welcome h1 {    
-    font-size: 82px;
-    margin-bottom: 10px;
-}
-
-#welcome p { /*this is the "I am an aspiring" sentence*/
-    font-size: 2em; 
-    text-align: center;
 }
 
 .typewriter {
