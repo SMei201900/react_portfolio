@@ -1,28 +1,3 @@
-#navbar {
-    background: var(--navbar-color) ; 
-    position: fixed; /*I want the nav menu to stay when I scroll*/
-    top: 0px;
-    width: 100%; /*takes the whole horizontal spacing */
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px; 
-}
-
-nav ul {
-    list-style-type: none;
-    gap: 20px;
-    display: flex;
-    padding: 20px;
-}
-
-#navbar a, #view-project-button a{
-    color: var(--text-color);
-    text-decoration: none; 
-}
-
-#navbar a:hover, #view-project-button a:hover, .project-title a:hover, #contacts a:hover {
-    color: var(--link-hover-color);
-}
 
 
 #welcome h1 {    

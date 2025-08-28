@@ -1,3 +1,5 @@
+import './Typewrite.css'
+
 export default function Welcome() {
   return (
     <div>
