@@ -1,0 +1,42 @@
+.typewriter {
+    display: flex; 
+    justify-content: center;
+}
+
+.typewriter h1 {
+    overflow: hidden; /*hides content until the animation starts*/
+    white-space: nowrap; /*keeps it on a single line*/
+    border-right: 5px solid; /*the cursor*/
+    width: 0; 
+    animation: 
+        typing 3s steps(25) forwards, 
+            /*"Steps" equals the number of characters 
+            and "forwards" ensures the element stays in its last state after the animation played*/
+        blink 0.7s step-end infinite, /*the blinking cursor*/ 
+        hide-cursor 0.1s forwards; 
+    animation-delay: 0s, 0s, 3s; 
+}
+
+@keyframes typing { /*"typing" is the name I gave the animation*/
+    from { width: 0; }
+    to { width: 100%; } /*how long the animation should play*/
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes hide-cursor {
+    to { border-right-color: transparent; }
+}
+
+.typewriter-p {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadeInAnimation ease 6s 1 forwards;
+}
+
+@keyframes fadeInAnimation { /*fadeInAnimation is the name I gave to the animation*/
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
