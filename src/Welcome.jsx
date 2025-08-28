@@ -1,4 +1,5 @@
 import './Typewrite.css'
+import './Welcome_and_About.css'
 
 export default function Welcome() {
   return (

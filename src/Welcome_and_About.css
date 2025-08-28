@@ -1,0 +1,61 @@
+#welcome h1 {    
+    font-size: 82px;
+    margin-bottom: 10px;
+}
+
+#welcome p { /*this is the "I am an aspiring" sentence*/
+    font-size: 2em; 
+    text-align: center;
+}
+
+#welcome {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /*allows the welcome texts to sit on top of each other*/
+    text-align: center; 
+    justify-content: center;
+}
+
+#view-project-button a {
+    color: var(--button-text-color);
+}
+
+#about {
+    border-top: 5px solid #C8D9F0;
+}
+
+#about h1 {
+    font-size: 48px;
+}
+
+#about-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#about-left-column { /*the text for the about me section*/
+    flex: 1; 
+    width: 50%;
+    padding-left: 15px;
+}
+
+#about-left-column p {
+    font-size: 18px;
+}
+
+#about-right-column { /*the skills button*/
+    width: 20%;
+    line-height: 23px;
+}
+
+.skill-button {
+    background-color: var(--button-color);
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 100px;
+    color: var(--button-text-color);
+}
