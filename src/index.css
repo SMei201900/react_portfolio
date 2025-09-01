@@ -18,6 +18,15 @@ body {
     color: var(--text-color); 
 }
 
+
+
+
+
+
+
+
+
+
 /*added for phone*/
 @media (max-width: 767px) {
     nav {
