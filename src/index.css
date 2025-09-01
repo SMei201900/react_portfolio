@@ -1,3 +1,9 @@
+* {margin: 0; } /*universal selector*/
+
+h1 { /*I want all Headings to be in the middle*/
+    text-align: center;
+}
+
 :root {
     --bg-color: linear-gradient(#A8B5E0, #C1D5F0, #D5E3F0);
     --navbar-color: #DAF0F7;
@@ -10,12 +16,6 @@ body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
     background: var(--bg-color);
     color: var(--text-color); 
-}
-
-* {margin: 0; } /*universal selector*/
-
-h1 { /*I want all Headings to be in the middle*/
-    text-align: center;
 }
 
 /*added for phone*/
