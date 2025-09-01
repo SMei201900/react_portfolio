@@ -64,7 +64,7 @@ body {
     #skills {
         display: flex;
         flex-wrap: wrap; 
-            /*allows things tomove below automatically when there is not enough space*/
+            /*allows things to move below automatically when there is not enough space*/
         gap: 0.75rem; /*rem is 16px so 0.75*16 = 12 */
     }
 
