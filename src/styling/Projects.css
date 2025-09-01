@@ -1,18 +1,14 @@
-#view-project-button { 
-    display: flex;
-    width: 150;
-    justify-content: center;
-    align-items: center;
-    background: var(--button-color);
-    padding: 10px;
-    border: 5px solid transparent;
-    border-radius: 50px;
-    margin: 20px auto 0; 
-}
-
 #projects h1 { 
     font-size: 48px;
     margin-top: 50px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .project-tile {
@@ -21,7 +17,6 @@
     flex-direction: column; 
     align-items: center; 
     gap: 10px;
-    margin: 15px 5px; /*15 top-bottom and 5 left-right*/
 }
 
 .project-title {
@@ -44,18 +39,9 @@
     object-fit: cover;
 }
 
-.carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 30px;
-}
-
 .carouselBtn {
     background-color: var(--button-color);
     border: none;
-    font-size: 10px;
     padding: 10px 15px;
     border-radius: 50%; /*makes the button round*/
     cursor: pointer;
@@ -64,15 +50,3 @@
 .carouselBtn:hover {
     background-color: var(--link-hover-color);
 }
-
-.carousel-tile {
-    width: 300px;
-    padding: 20px;
-    border: 5px solid #000040;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
