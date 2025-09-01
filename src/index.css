@@ -18,14 +18,23 @@ body {
     color: var(--text-color); 
 }
 
+.darkmode {
+    --bg-color:#00509d;
+    --navbar-color: #002365;
+    --text-color: white; 
+    --button-color: #ffdd42;
+    --button-text-color: #1A237E;
+    --link-hover-color: #f765a3;
+}
 
+#navbar a, #view-project-button a{
+    color: var(--text-color);
+    text-decoration: none; 
+}
 
-
-
-
-
-
-
+#navbar a:hover, #view-project-button a:hover, .project-title a:hover, #contacts a:hover {
+    color: var(--link-hover-color);
+}
 
 /*added for phone*/
 @media (max-width: 767px) {

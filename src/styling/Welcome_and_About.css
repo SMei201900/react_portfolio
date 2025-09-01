@@ -11,7 +11,7 @@
 #welcome {
     min-height: 100vh;
     display: flex;
-    flex-direction: column; /*allows the welcome texts to sit on top of each other*/
+    flex-direction: column; /*allows the welcome text to sit on top of each other*/
     text-align: center; 
     justify-content: center;
 }
@@ -35,7 +35,7 @@
     gap: 20px;
 }
 
-#about-left-column { /*the text for the about me section*/
+#about-left-column { /*the text for the About Me section*/
     flex: 1; 
     width: 50%;
     padding-left: 15px;

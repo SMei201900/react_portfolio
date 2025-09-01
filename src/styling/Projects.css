@@ -1,5 +1,5 @@
 
-#view-project-button { /*this is the View my Projects Button*/
+#view-project-button { 
     display: flex;
     width: 150;
     justify-content: center;
@@ -42,7 +42,7 @@
     color: var(--text-color);
 }
 
-.project-image { /*this is NOT the image itself, if you want to make edits*/
+.project-image { /*this is NOT the image itself*/
     flex: 1;
 }
 

@@ -10,8 +10,6 @@
     width: 0; 
     animation: 
         typing 3s steps(25) forwards, 
-            /*"Steps" equals the number of characters 
-            and "forwards" ensures the element stays in its last state after the animation played*/
         blink 0.7s step-end infinite, /*the blinking cursor*/ 
         hide-cursor 0.1s forwards; 
     animation-delay: 0s, 0s, 3s; 

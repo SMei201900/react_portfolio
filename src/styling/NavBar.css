@@ -18,12 +18,3 @@ nav ul {
 #navbar a {
     font-size: 25px;
 }
-
-#navbar a, #view-project-button a{
-    color: var(--text-color);
-    text-decoration: none; 
-}
-
-#navbar a:hover, #view-project-button a:hover, .project-title a:hover, #contacts a:hover {
-    color: var(--link-hover-color);
-}

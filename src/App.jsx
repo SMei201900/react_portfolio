@@ -1,4 +1,4 @@
-import './app.css'
+import './App.css'
 import Nav from './HeroSection/NavBar';
 import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'
