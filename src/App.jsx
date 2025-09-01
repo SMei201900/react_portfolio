@@ -1,8 +1,8 @@
 import './App.css'
-import Nav from './HeroSection/NavBar';
-import Projects from './Projects.jsx'
-import Contact from './Contact.jsx'
-import Welcome from './HeroSection/Welcome'
+import Nav from './Pages/HeroSection/NavBar.jsx';
+import Projects from './Pages/Projects.jsx'
+import Contact from './Pages/Contact.jsx'
+import Welcome from './Pages/HeroSection/Welcome.jsx'
 
 
 function App() {

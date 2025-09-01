@@ -1,4 +1,4 @@
-import '../styling/NavBar.css';
+import '../../styling/NavBar.css';
 import {useEffect, useState} from 'react'; 
 
 export default function NavBar() {

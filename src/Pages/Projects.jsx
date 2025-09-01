@@ -1,4 +1,4 @@
-import './styling/Projects.css'
+import '../styling/Projects.css'
 
 function Projects() {
   return <div>
