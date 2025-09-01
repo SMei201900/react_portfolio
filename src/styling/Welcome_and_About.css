@@ -32,6 +32,7 @@
     margin: 20px auto 0; 
 }
 
+
 #about {
     border-top: 5px solid #C8D9F0;
 }
@@ -70,4 +71,5 @@
     border-radius: 15px;
     width: 100px;
     color: var(--button-text-color);
+    white-space: nowrap;
 }

@@ -38,37 +38,40 @@ body {
 
 /*added for phone*/
 @media (max-width: 767px) {
-    nav {
-        display: none; /*hide the nav-menu when on phone*/
+    #navbar {
+        display: none !important; 
+        /*hide the nav-menu when on phone*/
     }
 
     #welcome h1, #about h1, #projects h1 {    
-        font-size: 48px;
+        font-size: 32px !important;
     }
 
     #welcome p {
-        font-size: 25px;
+        font-size: 18px !important;
     }
 
     #about-text {
         display: flex;
         flex-direction: column; /*I want them to stack on top of each other now*/
-        align-items: flex-start; 
+        align-items: center !important; 
         gap: 5px; 
     }
 
-    #about-left-column, #about-right-column {
+    #about-left-column {
         width: 100%; /*each should take up an entire line themselves*/
     }
 
-    #skills {
-        display: flex;
+    #about-right-column {
+        display: flex ;
         flex-wrap: wrap; 
             /*allows things to move below automatically when there is not enough space*/
+        justify-content: center;
         gap: 0.75rem; /*rem is 16px so 0.75*16 = 12 */
     }
 
     .skill-button {
-        margin-left: 12px;
+        width: auto !important;
+        white-space: nowrap;
     }
 }
