@@ -19,7 +19,7 @@ export default function Welcome() {
             <div id="about-text"> 
                 <div id="about-left-column">
                     <p>I build things for web and mobile.</p>
-                    <p>Currently training in app development with NPower and pursuing certifications in frontend design and UX/UI. </p>
+                    <p>Finished a training in app development with NPower and pursuing certifications in frontend design and UX/UI. </p>
                     <p>Passionate about coding and design and the intersection of them.</p>
                 </div>
 

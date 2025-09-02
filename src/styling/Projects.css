@@ -1,6 +1,7 @@
 #projects h1 { 
     font-size: 48px;
-    margin-top: 50px;
+    margin-top: 25px;
+    border-top: 5px solid #B0C1D9;
 }
 
 .carousel {
@@ -12,7 +13,7 @@
 }
 
 .project-tile {
-    border: 5px solid #000040; 
+    border: 5px solid #000040;
     display: flex;
     flex-direction: column; 
     align-items: center; 

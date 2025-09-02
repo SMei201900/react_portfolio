@@ -51,27 +51,11 @@ body {
         font-size: 18px !important;
     }
 
-    #about-text {
-        display: flex;
-        flex-direction: column; /*I want them to stack on top of each other now*/
-        align-items: center !important; 
-        gap: 5px; 
-    }
-
-    #about-left-column {
-        width: 100%; /*each should take up an entire line themselves*/
-    }
-
     #about-right-column {
         display: flex ;
-        flex-wrap: wrap; 
-            /*allows things to move below automatically when there is not enough space*/
-        justify-content: center;
-        gap: 0.75rem; /*rem is 16px so 0.75*16 = 12 */
     }
 
     .skill-button {
         width: auto !important;
-        white-space: nowrap;
     }
 }
