@@ -9,7 +9,7 @@ const projectData = [
     alt: "Survey Icon",
 }, { 
     title: "Book Store",
-    link: "https://codesandbox.io/p/sandbox/heuristic-cdn-997vmr", 
+    link: "https://github.com/SMei201900/bookstore", 
     img: "/assets/bookstore.png", 
     alt: "Bookstore Icon",
 }, { 
