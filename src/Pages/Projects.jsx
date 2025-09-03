@@ -5,17 +5,17 @@ const projectData = [
 { 
     title: "Survey Form",
     link: "https://github.com/SMei201900/survey-form", 
-    img: "assets/survey_icon_by_flaticon.png", 
+    img: "/assets/survey_icon_by_flaticon.png", 
     alt: "Survey Icon",
 }, { 
     title: "Book Store",
     link: "https://github.com/SMei201900/bookstore", 
-    img: "assets/bookstore.png", 
+    img: "/assets/bookstore.png", 
     alt: "Bookstore Icon",
 }, { 
     title: "Weather App",
     link: "https://github.com/SMei201900/react-weather-project", 
-    img: "assets/weather-icon.png", 
+    img: "/assets/weather-icon.png", 
     alt: "Cloud with the Sun peeking out behind it to represent the weather",
 }]
 
