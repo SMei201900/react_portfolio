@@ -1,0 +1,29 @@
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0; 
+    margin: 10px 10px 10px -20px; /*clockwise, top -right -bottom -left*/
+    border-radius: 50%; 
+    background-color: var(--bg-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill:var(--text-color); /*this changes icon color from black (light mode) to white (dark mode)*/
+}
+
+#theme-switch svg:last-child{ /*this hide the sun icon during light/default mode*/
+    display: none;
+}
+
+/*this will hide the moon icon during dark mode*/
+body.darkmode #theme-switch svg:first-child { 
+    display: none;
+}
+
+/*allows svg file to behave like a block instead of inline element; allows it to be visible*/
+body.darkmode #theme-switch svg:last-child {
+    display: block; 
+}
